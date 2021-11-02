@@ -13,6 +13,32 @@
             position: relative;
             background-image: url(./images/);
         }
+
+        .tags > span{
+
+            width: 100px;
+            height: 40px;
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            
+        }
+
+        .card > img{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -143,7 +169,7 @@
                     <div class="col">
                         <div class="card" style="width: 18rem;">
                             <img src="./images/mental5.jpg" class="card-img-top" alt="..." height="300px">
-                            <div class="card-body">
+                            <div class="card-body ">
                               <h5 class="card-title">Annabel Christine</h5>
                               <p class="card-text">
                                 Leveraging on trendy topics that
@@ -213,14 +239,14 @@
         </section>
 
         <!--footer section-->
-        <footer style="background: rgb(216, 215, 215);">
+        <footer style="background: rgb(231, 231, 231);">
             <div class="footer">
                 <div class="d-flex flex-row justify-content-around align-items-center">
                     <div class="btm-logo">
-                        <div class="container">
+                        <div class="container w-100" >
                             <span class="h3 mt-5">LISTEN</span>
 
-                            <p>
+                            <p class="w-50 mt-3">
                                 Leveraging on trendy topics that
                                 will captivate your attension and 
                                 worth following.
@@ -229,8 +255,8 @@
 
                     </div>
 
-                    <div class="topics mt-5">
-                        <span class="h5">Topics</span>
+                    <div class="topics mt-5 me-5">
+                        <span class="h5 mb-4">Topics</span>
                         <h6>Lifestyle</h6>
                         <h6>Technology</h6>
                         <h6>Science</h6>
@@ -240,7 +266,11 @@
 
                     </div>
 
-                    <div class="tags">
+                    <div class="tags mt-5 d-flex flex-row justify-content-around  align-items-center g-4 flex-wrap" style=" height: 25vh; width: 30%;">
+                        <span>#lifestyle</span>
+                        <span>#lifestyle</span>
+                        <span>#lifestyle</span>
+                        <span>#lifestyle</span>
                         <span>#lifestyle</span>
                         <span>#lifestyle</span>
                         <span>#lifestyle</span>
