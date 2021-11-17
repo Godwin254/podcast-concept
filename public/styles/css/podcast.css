@@ -103,7 +103,7 @@ nav > .nav-btn input{
 
 
 /*intro display*/
-.banner > section{
+.banner > .section1{
     position: relative;
     height: 40vh;
     background-color: #d8e7fc;
@@ -153,5 +153,23 @@ nav > .nav-btn input{
     letter-spacing: 0.05em;
     margin-right: 30px;
     cursor: pointer;
+
+}
+
+/*section 2 styles*/
+.banner > .section2{
+    position: relative;
+}
+
+.section2 > .browse h1{
+    font-weight: bolder;
+    font-size: 26px;
+
+    color: #0D0C27;
+    border: solid;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 
 }
