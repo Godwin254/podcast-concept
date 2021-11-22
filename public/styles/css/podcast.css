@@ -166,10 +166,34 @@ nav > .nav-btn input{
     font-size: 26px;
 
     color: #0D0C27;
-    border: solid;
-    width: 20vw;
+    border-bottom: solid;
+    width: 15vw;
     height: 10vh;
     display: flex;
     align-items: center;
 
+}
+
+.browse  > .content{
+    position: relative;
+   
+}
+
+.content .thumnail{
+    position: relative;
+    height: 20vh;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.thumnail .details{
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
