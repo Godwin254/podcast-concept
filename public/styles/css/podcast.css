@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -50,13 +52,14 @@
 
 /*navigation bar*/
 nav{
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100vw;
     height: 10vh;
     background: #ffff;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
     margin-bottom: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,22 +69,37 @@ nav{
 nav > .logo span{
     font-size: 36px;
     font-weight: bolder;
-    color: #9EB709;
+    color: rgb(14, 218, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .logo .music{
+    transform: rotate(-25deg);
+    margin: 0;
+    width: 20px;
+    color: #140b2efd;
 }
 
 nav > .navlinks > .container .nav-items{
     position: relative;
-    width: 30vw;
+    width: 25vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .nav-items > a{
-    color: #140B2ED9;
-    font-size: 14px;
+    color: #140b2eb6;
+    font-size: 15px;
     text-decoration: none;
     font-weight: 550;
+}
+
+.nav-items > a:hover{
+    color: #140b2ee7;
+    transition: 0.5s ease-in-out;
 }
 
 nav > .nav-btn > .btn{
@@ -94,11 +112,45 @@ nav > .nav-btn > .btn{
 
 nav > .nav-btn input{
     height: 40px;
-    width: 100px;
+    width: 120px;
     font-size: 15px;
     font-weight: 550;
     background: none;
     border-radius: 5px;
+    cursor: pointer;
+
+}
+
+nav > .nav-btn input:hover{
+    border: none;
+    background: #140b2efd;
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+nav > .nav-btn i{
+    color: rgb(197, 109, 109);
+    cursor: pointer;
+}
+
+nav > .nav-btn i > .logintext{
+    visibility: hidden;
+    width: 60px;
+    color: rgb(14, 11, 66);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    left: 80%;
+    font-size: 14px;
+    font-weight: normal;
+    z-index: 1;
+    transition: 0.1s ease-in-out;
+}
+
+nav > .nav-btn i:hover .logintext{
+    visibility: visible;
 }
 
 
@@ -107,6 +159,7 @@ nav > .nav-btn input{
     position: relative;
     height: 40vh;
     background-color: #d8e7fc;
+    margin-top: 70px;
 
 }
 
@@ -122,6 +175,7 @@ nav > .nav-btn input{
     font-size: 2em;
     margin-bottom: 30px;
     letter-spacing: 10%;
+    font-family: 'Oswald', sans-serif;
 }
 
 .intro > .controls > .media{
