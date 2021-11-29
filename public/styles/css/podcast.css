@@ -59,6 +59,12 @@ header{
     align-items: center;
 }
 
+.updates i{
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
+
 .navbar{
     position: relative;
     display: flex;
@@ -429,7 +435,7 @@ footer .layer2{
     align-items: center;
 }
 
-.socials span{
+.socials i{
     border: 0.5px solid blueviolet;
     height: 50px;
     width: 50px;
@@ -437,10 +443,11 @@ footer .layer2{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .layer2 .subscribe{
-position: relative;
+    position: relative;
 }
 
 .subscribe input:first-child{
@@ -494,248 +501,3 @@ footer .layer3 h6{
         display: none;
     }
 }
-
-/*navigation bar
-nav{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    
-    height: 10vh;
-    background: #ffff;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav > .logo span{
-    font-size: 36px;
-    font-weight: bolder;
-    color: rgb(14, 218, 14);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav > .logo .music{
-    transform: rotate(-25deg);
-    margin: 0;
-    width: 20px;
-    color: #140b2efd;
-}
-
-nav > .navlinks > .container .nav-items{
-    position: relative;
-    width: 25vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.nav-items > a{
-    color: #140b2eb6;
-    font-size: 15px;
-    text-decoration: none;
-    font-weight: 550;
-}
-
-.nav-items > a:hover{
-    color: #140b2ee7;
-    transition: 0.5s ease-in-out;
-}
-
-nav > .nav-btn > .btn{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 13vw;
-}
-
-nav > .nav-btn input{
-    height: 40px;
-    width: 120px;
-    font-size: 15px;
-    font-weight: 550;
-    background: none;
-    border-radius: 5px;
-    cursor: pointer;
-
-}
-
-nav > .nav-btn input:hover{
-    border: none;
-    background: #140b2efd;
-    color: #fff;
-    transition: 1s ease-in-out;
-}
-
-nav > .nav-btn i{
-    color: rgb(197, 109, 109);
-    cursor: pointer;
-}
-
-nav > .nav-btn i > .logintext{
-    visibility: hidden;
-    width: 60px;
-    color: rgb(14, 11, 66);
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 5px;
-    position: absolute;
-    top: 30px;
-    left: 80%;
-    font-size: 14px;
-    font-weight: normal;
-    z-index: 1;
-    transition: 0.1s ease-in-out;
-}
-
-nav > .nav-btn i:hover .logintext{
-    visibility: visible;
-}
-
-
-intro display
-.banner > .section1{
-    position: relative;
-    height: 40vh;
-    background-color: #d8e7fc;
-    margin-top: 70px;
-
-}
-
-.banner > section > .intro{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
-.intro > .controls h1{
-    font-size: 2em;
-    margin-bottom: 30px;
-    letter-spacing: 10%;
-    font-family: 'Oswald', sans-serif;
-}
-
-.intro > .controls > .media{
-    margin-bottom: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.media > i{
-    margin-right: 30px;
-}
-
-.intro > .controls > .access-btn{
-    display: flex;
-    flex-direction: row;
-
-}
-
-.access-btn > input{
-    width: 150px;
-    height: 40px;
-    background: none;
-    border: solid;
-    border-radius: 5px;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.05em;
-    margin-right: 30px;
-    cursor: pointer;
-
-}
-
-/*section 2 styles
-.banner > .section2{
-    position: relative;
-}
-
-.section2 > .browse h1{
-    font-weight: bolder;
-    font-size: 26px;
-
-    color: #0D0C27;
-    border-bottom: solid;
-    width: 15vw;
-    height: 10vh;
-    display: flex;
-    align-items: center;
-
-}
-
-.browse  > .content{
-    position: relative;
-   
-}
-
-.content .thumnail{
-    position: relative;
-    height: 20vh;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.thumnail .details{
-    position: relative;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-*/
-
-
-
-/*mobile responsiveness
-@media only screen and (max-width: 600px) {
-
-    .banner{
-        overflow-x: hidden;
-    }
-
-    .container{
-        position: relative;
-        margin-left: 0;
-        margin-right: 0px;
-    }
-  
-
-    nav{
-        width: 100vw;
-        border: solid;
-    }
-
-    nav > .navlinks > .container .nav-items{
-        display: none;
-    }
-
-    nav > .nav-btn > .btn{
-        display: none;
-    }
-
-    .banner > .section1{
-        display: none;
-    }
-
-    .banner > .section2{
-        display: none;
-    }
-
-    
-}
-
-*/
